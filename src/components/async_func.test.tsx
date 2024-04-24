@@ -7,7 +7,7 @@ it('delayが指定された時間後にメッセージを返す', async() => {
 
 it('timeがマイナスの場合はエラーを返す', async() => {
     try {
-        const result = await delay('Hello Vites', -1);
+        await delay('Hello Vites', -1);
     } catch (e: any) {
         expect(e.message).toBe('timeは0以上で設定してください');        
     }
