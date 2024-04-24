@@ -4,7 +4,7 @@ import { Greet } from "./Greet"
 
 describe('Greet Component', ()=> {
     it('checks if the h1 element is present', () => {
-        render (<Greet/>);
+        render (<Greet />);
         const h1El = screen.getByText("こんにちは");
         expect(h1El).toBeInTheDocument();
     })
