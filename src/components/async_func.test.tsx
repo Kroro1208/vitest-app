@@ -14,7 +14,7 @@ it('timeがマイナスの場合はエラーを返す', async() => {
 })
 
 // これでもOK
-it('timeがマイナスの場合はエラーを返す', async() => {
+it('timeがマイナスの場合はエラーを返す2', async() => {
     await expect(delay('Hello Vites', -2)).rejects.toThrow('timeは0以上で設定してください');
 })
 
