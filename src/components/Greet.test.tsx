@@ -7,5 +7,8 @@ describe('Greet Component', ()=> {
         render (<Greet />);
         const h1El = screen.getByText("こんにちは");
         expect(h1El).toBeInTheDocument();
+
+        const radioEL: HTMLElement = screen.getByRole('radio');
+        expect(radioEL).toBeInTheDocument();
     })
 })
