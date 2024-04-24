@@ -6,7 +6,7 @@ export const Greet: React.FC = () => {
             <form action="" className='flex flex-col gap-5'>
                 <h1>こんにちは</h1>
                 <div className='flex gap-3 items-center justify-start'>
-                    <input type="radio" />
+                    <input id="fullname" type="radio" />
                     <label htmlFor="fullname">氏名</label>
                 </div>
                 <div className='flex flex-col gap-3'>

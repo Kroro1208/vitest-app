@@ -10,5 +10,8 @@ describe('Greet Component', ()=> {
 
         const radioEL: HTMLElement = screen.getByRole('radio');
         expect(radioEL).toBeInTheDocument();
+
+        const elByLabel = screen.getByLabelText('氏名');
+        expect(elByLabel).toBeInTheDocument();
     })
 })
